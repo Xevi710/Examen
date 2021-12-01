@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0 charset="utf-8">
+    <title> Segunda </title>
+
+    <style>
+        .border{
+            border-color: aquamarine;
+        }
+
+        .fondo{
+            background-color: aquamarine;
+        }
+        .sombreado{
+            opacity: 0.3;
+        }
+  
+    </style>
+</head>
+
+<header>
+    <strong>petinder</strong>
+    <br><br>
+    <hr class="sombreado">
+</header>
+
+<body>
+
+    <h1>
+        <strong>Hazte socio</strong>
+    </h1>    
+    <p>
+        Colorabora con  Petinder haciéndote socio por solo 15 euros mensuales.
+        Con muy poco puedes ayudar mucho a nuestros amigos peludos. 
+        Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que 
+        se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros.
+    </p>
+    
+    <form>
+        <fieldset class="border">
+            <legend class="fondo">Datos personales</legend>
+
+            <label for="nombre">Nombre *</label><br>
+            <input  id="nombre" type="text" pattern="[A-Za-z]{1,15}" name="nombre" required="required" minlength="5"><br>
+            
+            <label for="apellidos">Apellidos *</label><br>
+            <input  id="apellidos" type="text" pattern="[A-Za-z]{1,15}" name="apellidos" required="required" minlength="5"><br>
+
+            <label for="email">Correo electrónico *</label><br>
+            <input  id="email" type="email" name="email" required="required" minlength="5"><br>
+
+            <label for="dni">DNI *</label><br>
+            <input type="text" name="dni" id="dni" required="required" pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="5"><br>
+
+            <label for="fechaNac">Fecha de nacimiento</label><br>
+            <input type="date" name="fechaNac" id="fechaNac"><br>
+  
+        </fieldset>
+        <br>
+
+        *Todos los campos marcados son obligatorios <br>
+        <input type="checkbox" required> He leído y acepto la política y las condicioines de uso <br>
+        <button class="fondo" >Enviar</button>
+      
+    </form>
+    
+    <br>
+
+</body>
+
+<footer class="fondo">
+    <small>2021 &copy; Petinder - Fco Javier Colorado Pelazas</small>
+</footer>
+
+</html>
